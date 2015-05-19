@@ -20,38 +20,19 @@ before_script:
 - mvn clean
 - mvn install4j:install-license
 deploy:
-- provider: releases
-  skip_cleanup: true
+  provider: releases
   api_key:
-    secure: L4y+3fi/yVR7guv7cynzrTOjRbE4+JTK79Fv5J8IQFwtzTP4V2GeW5ZjTdZXAlsFRvak5zhxY4OEYbYI2/riMib5Ea/K28Fd0F/nK8bUDddzxyXPc8zj6VrQINJX8Na2KfPvXT2UR+LtUWkK5HjeR+O/YQPTO4M+7SDGx5P+gog=
+    secure: UtndggRAFKGkLYgf0YxG0HNOtzalTYRsKhQtiTQmEAywsbzit4nNVDmqlyOjL4RK+fWnFQ3E0ELh75YLjEBwdKY7jEYYTxVE014RFQxZMLOnah4hdJrnyI6fURo+72bx4zLkPWd5JLyaIkTQ2ufnHdX3aK0lt5qM/yL9vRfhYYBr8aLR9cR18N+fG8gv+zuQTYvxwg6mdrB5yzSxH+ZnAmP+T8NXwGZAYoUeyP6BkQ/+sE6bGb3dkhL5tH1rJHet/7IJ+aTyE+VkhyCbI2Kjf7G0PSouG+0hrBAMp1yLsiObjqK5P/zGNR9rnEH+B0FjkmnDjf9CxC4eRoHgnq/evhHUPPX2Heu5iHs17quCFUhFGjYgTOYDvRqDHf6wAl2zqkEMCivyBsCUR/iwebpPVzY7/dT71l9jSSrG6XhGntxQFjkG8L2rMXfglcg2tp39HxvO7POGXelPO6XKgD4AC5N4P1Au8quLfEMIk39ZlH0aVP7ciqQMCB09m5weQesQzb3moqDLiBzeHb96IVNIwqTEwv3Jw/ZrZpsDDxi5mOwYXMQWgXKnxHwWxVIg+2sMU5dtrnYFOSJ+XgHB6qkA7Wt7uwuoBBB0UrXyqhlLQEw3AIsH5i6j0XJj4RLUu9uprj3E0wAulzVedkSqTCHkTu+u8s17ZgjFG3As6QXWLlI=
   file:
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Mac.dmg
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Linux.tar.gz
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Linux_No_JRE.tar.gz
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows.exe
+    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_i586.exe
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_No_JRE.exe
+    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_i586_No_JRE.exe
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows.zip
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_No_JRE.zip
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/updates.xml
-  on:
-    tags: true
-    all_branches: true
-    repo: vedmalex/AsciidocFX
-- provider: s3
-  skip_cleanup: true
-  access_key_id: AKIAIHHVKYJLE6JUVEMA
-  secret_access_key:
-    secure: u3AfnEBb4o1boHzYsbPBlYqsxkKKWd4e02sabTLB7RRojgW1PpvGpvMCEZQ7EdziAfqJV2qZAI4ayYen36t2S0P9LMtt8NbnSO9RSF41Na+cGlsetbHgbejjK3QC5wM18j263gaxlM6uKD9wbO9VYaujYE6r66UUGdrQkNZh9xc=
-  bucket: asciidoc-fx
-  acl: public_read
-  local_dir: /home/travis/build/vedmalex/AsciidocFX/target/media
-  file:
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Mac.dmg
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Linux.tar.gz
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Linux_No_JRE.tar.gz
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows.exe
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_No_JRE.exe
-    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows.zip
+    - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_i586.zip
     - /home/travis/build/vedmalex/AsciidocFX/target/media/AsciidocFX_Windows_No_JRE.zip
     - /home/travis/build/vedmalex/AsciidocFX/target/media/updates.xml
   on:
