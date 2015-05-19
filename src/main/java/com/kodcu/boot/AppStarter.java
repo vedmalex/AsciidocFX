@@ -97,7 +97,7 @@ public class AppStarter extends Application {
         controller.setHostServices(hostServices);
 
         Scene scene = new Scene(root);
-
+        // здесь он применяет стили...
         scene.getStylesheets().add("/styles/Styles.css");
         Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
         stage.setWidth(bounds.getWidth());

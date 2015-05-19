@@ -42,7 +42,7 @@ public class DirectoryService {
         this.current = current;
         
          workingDirectorySupplier = () -> {
-            final DirectoryChooser directoryChooser = newDirectoryChooser("Select working directory");
+            final DirectoryChooser directoryChooser = newDirectoryChooser("Выберите рабочую директорию");
             final File file = directoryChooser.showDialog(null);
 
             workingDirectory = Optional.ofNullable(file.toPath());
@@ -68,7 +68,7 @@ public class DirectoryService {
 //        };
 
         pathSaveSupplier = () -> {
-            final FileChooser chooser = newFileChooser("Save Document");
+            final FileChooser chooser = newFileChooser("Сохранить документ");
             chooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Asciidoc", "*.asc", "*.asciidoc", "*.adoc", "*.ad", "*.txt","*.*"));
             chooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Markdown", "*.md", "*.markdown", "*.txt","*.*"));
             File file = chooser.showSaveDialog(null);
@@ -151,7 +151,7 @@ public class DirectoryService {
     }
 
     public void changeWorkigDir() {
-        DirectoryChooser directoryChooser = this.newDirectoryChooser("Select Working Directory");
+        DirectoryChooser directoryChooser = this.newDirectoryChooser("Выберите рабочую директорию");
         File selectedDir = directoryChooser.showDialog(null);
         if (Objects.nonNull(selectedDir)) {
             controller.getRecentFiles().setWorkingDirectory(selectedDir.toString());

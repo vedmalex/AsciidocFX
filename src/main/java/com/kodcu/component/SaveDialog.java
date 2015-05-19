@@ -10,7 +10,7 @@ public final class SaveDialog extends TextDialog {
     }
 
     public static SaveDialog create() {
-        SaveDialog dialog = new SaveDialog("Enter new file name ", "Create new file ");
+        SaveDialog dialog = new SaveDialog("Введите новое имя файла ", "Создать новый файл ");
         dialog.setToolTip("**.{asc,adoc,ad,asiidoc,md,markdown,txt} allowed");
         dialog.setKeyReleaseEvent("^[^\\\\/:?*\"<>|]+\\.(asc|md|adoc|asciidoc|ad|markdown|txt)");
         return dialog;

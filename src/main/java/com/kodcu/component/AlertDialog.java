@@ -10,7 +10,7 @@ public class AlertDialog extends Alert implements DefenderDialog {
 
     public AlertDialog() {
         super(AlertType.WARNING, null, ButtonType.YES, ButtonType.CANCEL);
-        super.setTitle("Warning");
+        super.setTitle("Внимение");
         setDefaultIcon(super.getDialogPane());
     }
 

@@ -10,7 +10,7 @@ public final class RenameDialog extends TextDialog {
     }
 
     public static RenameDialog create() {
-        RenameDialog dialog = new RenameDialog("Enter new file name ", "Rename file ");
+        RenameDialog dialog = new RenameDialog("Введите новое имя файла ", "Переименовать файл ");
         dialog.setKeyReleaseEvent("^[^\\\\/:?*\"<>|]+$");
         return dialog;
     }

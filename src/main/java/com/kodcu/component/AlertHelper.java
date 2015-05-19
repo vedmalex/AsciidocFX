@@ -13,25 +13,25 @@ public final class AlertHelper {
 
     public static Optional<ButtonType> deleteAlert() {
         AlertDialog deleteAlert = new AlertDialog(AlertType.WARNING, null, ButtonType.YES, ButtonType.CANCEL);
-        deleteAlert.setHeaderText("Do you want to remove file(s)?");
+        deleteAlert.setHeaderText("Вы действительно хотите удалить файл(ы)?");
         return deleteAlert.showAndWait();
     }
 
     public static Optional<ButtonType> nullDirectoryAlert() {
         AlertDialog deleteAlert = new AlertDialog(AlertType.WARNING, null, ButtonType.OK);
-        deleteAlert.setHeaderText("Please select directorie(s)");
+        deleteAlert.setHeaderText("Выберите словарь(и)");
         return deleteAlert.showAndWait();
     }
 
     public static Optional<ButtonType> notImplementedDialog() {
         AlertDialog alert = new AlertDialog(AlertType.WARNING, null, ButtonType.OK);
-        alert.setHeaderText("This feature is not available for Markdown.");
+        alert.setHeaderText("Эта фича недоступна для Markdown.");
         return alert.showAndWait();
     }
 
     public static Optional<ButtonType> saveAlert() {
         AlertDialog saveAlert = new AlertDialog();
-        saveAlert.setHeaderText("This document is not saved. Do you want to close it?");
+        saveAlert.setHeaderText("Этот файл не сохранен. Вы хотите его закрыть?");
         return saveAlert.showAndWait();
     }
 }

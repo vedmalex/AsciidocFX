@@ -348,7 +348,7 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
     @FXML
     private void generateSampleBook(ActionEvent event) {
 
-        DirectoryChooser directoryChooser = directoryService.newDirectoryChooser("Select a New Directory for sample book");
+        DirectoryChooser directoryChooser = directoryService.newDirectoryChooser("Выберите новую директорию для примера книги");
         File file = directoryChooser.showDialog(null);
         threadService.runTaskLater(() -> {
             sampleBookService.produceSampleBook(configPath, file.toPath());
@@ -380,7 +380,7 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
                 Path docbookPath;
 
                 if (askPath) {
-                    FileChooser fileChooser = directoryService.newFileChooser("Save Docbook file");
+                    FileChooser fileChooser = directoryService.newFileChooser("Сохраните файл Docbook");
                     fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Docbook", "*.xml"));
                     docbookPath = fileChooser.showSaveDialog(null).toPath();
                 } else
@@ -438,7 +438,7 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
         }
 
         if (Objects.isNull(config.getKindlegenDir())) {
-            FileChooser fileChooser = directoryService.newFileChooser("Select 'kindlegen' executable");
+            FileChooser fileChooser = directoryService.newFileChooser("Выберите исполняемый файл для 'kindlegen'");
             File kindlegenFile = fileChooser.showOpenDialog(null);
             if (Objects.isNull(kindlegenFile))
                 return;
@@ -554,25 +554,25 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
         htmlPro.setOnMouseClicked(event -> {
             htmlProMenu.show(htmlPro, event.getScreenX(), 50);
         });
-        htmlProMenu.getItems().add(MenuItemBuilt.item("Save").click(event -> {
+        htmlProMenu.getItems().add(MenuItemBuilt.item("Сохранить").click(event -> {
             this.generateHtml();
         }));
-        htmlProMenu.getItems().add(MenuItemBuilt.item("Save as").click(event -> {
+        htmlProMenu.getItems().add(MenuItemBuilt.item("Сохранить как...").click(event -> {
             this.generateHtml(true);
         }));
-        htmlProMenu.getItems().add(MenuItemBuilt.item("Copy source").tip("Copy HTML source").click(event -> {
+        htmlProMenu.getItems().add(MenuItemBuilt.item("Копировать исходный текст").tip("Копировать исходный текст HTML").click(event -> {
             this.cutCopy(lastRendered.getValue());
         }));
-        htmlProMenu.getItems().add(MenuItemBuilt.item("Clone source").tip("Copy HTML source (Embedded images)").click(event -> {
+        htmlProMenu.getItems().add(MenuItemBuilt.item("Клонировать исходный текст").tip("Копировать исходный текст HTML (встроенные картинки)").click(event -> {
             htmlPane.call("imageToBase64Url", new Object[]{});
         }));
 
         ContextMenu pdfProMenu = new ContextMenu();
         pdfProMenu.getStyleClass().add("build-menu");
-        pdfProMenu.getItems().add(MenuItemBuilt.item("Save").click(event -> {
+        pdfProMenu.getItems().add(MenuItemBuilt.item("Сохранить").click(event -> {
             this.generatePdf();
         }));
-        pdfProMenu.getItems().add(MenuItemBuilt.item("Save as").click(event -> {
+        pdfProMenu.getItems().add(MenuItemBuilt.item("Сохранить как...").click(event -> {
             this.generatePdf(true);
         }));
         pdfPro.setContextMenu(pdfProMenu);
@@ -583,10 +583,10 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
 
         ContextMenu docbookProMenu = new ContextMenu();
         docbookProMenu.getStyleClass().add("build-menu");
-        docbookProMenu.getItems().add(MenuItemBuilt.item("Save").click(event -> {
+        docbookProMenu.getItems().add(MenuItemBuilt.item("Сохранить").click(event -> {
             this.convertDocbook();
         }));
-        docbookProMenu.getItems().add(MenuItemBuilt.item("Save as").click(event -> {
+        docbookProMenu.getItems().add(MenuItemBuilt.item("Сохранить как...").click(event -> {
             this.convertDocbook(true);
         }));
 
@@ -599,18 +599,18 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
         ContextMenu ebookProMenu = new ContextMenu();
         ebookProMenu.getStyleClass().add("build-menu");
         ebookProMenu.getItems().add(MenuBuilt.name("Mobi")
-                .add(MenuItemBuilt.item("Save").click(event -> {
+                .add(MenuItemBuilt.item("Сохранить").click(event -> {
                     this.convertMobi();
                 }))
-                .add(MenuItemBuilt.item("Save as").click(event -> {
+                .add(MenuItemBuilt.item("Сохранить как...").click(event -> {
                     this.convertMobi(true);
                 })).build());
 
         ebookProMenu.getItems().add(MenuBuilt.name("Epub")
-                .add(MenuItemBuilt.item("Save").click(event -> {
+                .add(MenuItemBuilt.item("Сохранить").click(event -> {
                     this.convertEpub();
                 }))
-                .add(MenuItemBuilt.item("Save as").click(event -> {
+                .add(MenuItemBuilt.item("Сохранить как...").click(event -> {
                     this.convertEpub(true);
                 })).build());
 
@@ -793,38 +793,38 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
         });
 
         ContextMenu previewContextMenu = new ContextMenu(
-                MenuItemBuilt.item("Go back").click(event -> {
+                MenuItemBuilt.item("Назад").click(event -> {
                     WebHistory history = htmlPane.getWebEngine().getHistory();
                     if (history.getCurrentIndex() != 0)
                         history.go(-1);
 
                 }),
-                MenuItemBuilt.item("Go forward").click(event -> {
+                MenuItemBuilt.item("Вперед").click(event -> {
                     WebHistory history = htmlPane.getWebEngine().getHistory();
                     if (history.getCurrentIndex() + 1 != history.getEntries().size())
                         history.go(+1);
                 }),
                 new SeparatorMenuItem(),
-                MenuItemBuilt.item("Copy Html").click(event -> {
+                MenuItemBuilt.item("Копировать HTML").click(event -> {
                     DocumentFragmentImpl selectionDom = (DocumentFragmentImpl) htmlPane.getWebEngine().executeScript("window.getSelection().getRangeAt(0).cloneContents()");
                     ClipboardContent content = new ClipboardContent();
                     content.putHtml(XMLHelper.nodeToString(selectionDom, true));
                     clipboard.setContent(content);
                 }),
-                MenuItemBuilt.item("Copy Text").click(event -> {
+                MenuItemBuilt.item("Копировать текст").click(event -> {
                     String selection = (String) htmlPane.getWebEngine().executeScript("window.getSelection().toString()");
                     ClipboardContent content = new ClipboardContent();
                     content.putString(selection);
                     clipboard.setContent(content);
                 }),
-                MenuItemBuilt.item("Copy Source").click(event -> {
+                MenuItemBuilt.item("Копировать исходный текст").click(event -> {
                     DocumentFragmentImpl selectionDom = (DocumentFragmentImpl) htmlPane.getWebEngine().executeScript("window.getSelection().getRangeAt(0).cloneContents()");
                     ClipboardContent content = new ClipboardContent();
                     content.putString(XMLHelper.nodeToString(selectionDom, true));
                     clipboard.setContent(content);
                 }),
                 new SeparatorMenuItem(),
-                MenuItemBuilt.item("Refresh").click(event -> {
+                MenuItemBuilt.item("Обновить").click(event -> {
                     htmlPane.getWebEngine().executeScript("clearImageCache()");
                 })
         );
@@ -1373,11 +1373,11 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
                 || Objects.isNull(p2);
 
         DirectoryChooser gitbookChooser = new DirectoryChooser();
-        gitbookChooser.setTitle("Select Gitbook Root Directory");
+        gitbookChooser.setTitle("Выберите корневую папку для Gitbook");
         gitbookRoot = gitbookChooser.showDialog(null);
 
         DirectoryChooser asciibookChooser = new DirectoryChooser();
-        asciibookChooser.setTitle("Select Blank Asciibook Root Directory");
+        asciibookChooser.setTitle("Выберите корневую папку для Asciibook");
         asciibookRoot = asciibookChooser.showDialog(null);
 
         if (nullPathPredicate.test(gitbookRoot, asciibookRoot)) {

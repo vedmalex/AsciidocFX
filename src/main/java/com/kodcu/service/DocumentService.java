@@ -113,7 +113,7 @@ public class DocumentService {
     }
 
     public void openDoc() {
-        FileChooser fileChooser = directoryService.newFileChooser("Open Asciidoc File");
+        FileChooser fileChooser = directoryService.newFileChooser("Открыть файл");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Asciidoc", "*.asc", "*.asciidoc", "*.adoc", "*.ad", "*.txt", "*.*"));
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Markdown", "*.md", "*.markdown", "*.txt", "*.*"));
         List<File> chosenFiles = fileChooser.showOpenMultipleDialog(controller.getStage());
