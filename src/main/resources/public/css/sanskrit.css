@@ -1,0 +1,42 @@
+@font-face {
+font-family: "RMDEVA";
+font-weight: bold;
+font-style: normal;
+src: url("./../fonts/RMDEVA.OTF");
+}
+@font-face {
+font-family: "Gaura-Times";
+font-weight: bold;
+font-style: normal;
+src: url("./../fonts/U_TMS_B_.ttf");
+}
+@font-face {
+font-family: "Gaura-Times";
+font-weight: normal;
+font-style: italic;
+src: url("./../fonts/U_TMS__I.ttf");
+}
+@font-face {
+font-family: "Gaura-Times";
+font-weight: normal;
+font-style: normal;
+src: url("./../fonts/U_TMS___.ttf");
+}
+.dev-uvaca {
+font-family: "RMDEVA";
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+font-size: small;
+line-height: 1.6em;
+page-break-after:avoid;
+}
+.devanagari {
+font-family: "RMDEVA";
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 1em;
+font-size: small;
+line-height: 1.6em;
+}
