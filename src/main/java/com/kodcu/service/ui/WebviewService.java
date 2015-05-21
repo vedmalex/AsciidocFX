@@ -63,16 +63,16 @@ public class WebviewService {
         editorPane.load(String.format("http://localhost:%d/editor.html", controller.getPort()));
         ContextMenu menu = new ContextMenu();
 
-        MenuItem copy = MenuItemBuilt.item("Copy").click(event1 -> {
+        MenuItem copy = MenuItemBuilt.item("Копировать").click(event1 -> {
             controller.cutCopy(current.currentEditorSelection());
         });
-        MenuItem paste = MenuItemBuilt.item("Paste").click(e -> {
+        MenuItem paste = MenuItemBuilt.item("Вставить").click(e -> {
             controller.paste();
         });
-        MenuItem pasteRaw = MenuItemBuilt.item("Paste raw").click(e -> {
+        MenuItem pasteRaw = MenuItemBuilt.item("Вставить без изменений").click(e -> {
             controller.pasteRaw();
         });
-        MenuItem indexSelection = MenuItemBuilt.item("Index selection").click(e -> {
+        MenuItem indexSelection = MenuItemBuilt.item("Индексировать выбранное").click(e -> {
             shortcutProvider.getProvider().addIndexSelection();
         });
         MenuItem markdownToAsciidoc = MenuItemBuilt.item("Markdown to Asciidoc").click(e -> {
