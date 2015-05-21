@@ -334,7 +334,7 @@ var editorMenu = {
         },
         addExplicitId: function() {
             ReplaceInsertWrap({
-                insertee: "\n[[$SELECTION]]",
+                insertee: "\n[[$SELECTION]]\n",
                 defSelection: 'section-refname'
             });
         },
