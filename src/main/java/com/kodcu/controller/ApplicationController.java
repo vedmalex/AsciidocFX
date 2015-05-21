@@ -1282,6 +1282,11 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
     }
 
     @FXML
+    private void openAsciidoctorPage(ActionEvent actionEvent) {
+        getHostServices().showDocument("http://asciidoctor.org/docs/asciidoc-syntax-quick-referenceX");
+    }
+
+    @FXML
     public void generateCheatSheet(ActionEvent actionEvent) {
         Path cheatsheetPath = configPath.resolve("cheatsheet/cheatsheet.asc");
         tabService.addTab(cheatsheetPath);
