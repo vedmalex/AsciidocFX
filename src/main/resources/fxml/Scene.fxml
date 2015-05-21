@@ -18,12 +18,12 @@
                       <children>
                           <MenuButton mnemonicParsing="false" fx:id="panelShowHideMenuButton" >
                               <items>
-                                  <MenuItem mnemonicParsing="false" text="Hide File Browser" onAction="#hideFileBrowser" fx:id="hideFileBrowser" />
-                                  <CheckMenuItem mnemonicParsing="false" text="Hide Preview Panel" onAction="#hidePreviewPanel" fx:id="hidePreviewPanel" />
-                                  <MenuItem mnemonicParsing="false" text="Hide All" onAction="#hideFileAndPreviewPanels" />
+                                  <MenuItem mnemonicParsing="false" text="Спрятать панель файлов" onAction="#hideFileBrowser" fx:id="hideFileBrowser" />
+                                  <CheckMenuItem mnemonicParsing="false" text="Спрятать панель пред.просмотра" onAction="#hidePreviewPanel" fx:id="hidePreviewPanel" />
+                                  <MenuItem mnemonicParsing="false" text="Спрятать всё" onAction="#hideFileAndPreviewPanels" />
                               </items>
                               <tooltip>
-                                  <Tooltip text="Hide/Show Panels" />
+                                  <Tooltip text="Показать/Спрятать Панели" />
                               </tooltip>
                           </MenuButton>
                         <Button fx:id="changeWorkingDir" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeWorkingDir" text="" HBox.hgrow="NEVER">
@@ -31,7 +31,7 @@
                             <Label fx:id="workingDirButton" minWidth="-Infinity" mnemonicParsing="false" text="" />
                           </graphic>
                           <tooltip>
-                            <Tooltip text="Change Workdir" />
+                            <Tooltip text="Изменить рабочую папку" />
                           </tooltip>
                         </Button>
                         <Button id="goUp" minWidth="-Infinity" mnemonicParsing="false" onAction="#goUp" text="">
@@ -39,7 +39,7 @@
                             <Label fx:id="goUpLabel" text="" />
                           </graphic>
                           <tooltip>
-                            <Tooltip text="Go Up" />
+                            <Tooltip text="на уровень выше" />
                           </tooltip>
                         </Button>
                         <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#refreshWorkingDir" text="">
@@ -47,7 +47,7 @@
                             <Label fx:id="refreshLabel" text="" />
                           </graphic>
                           <tooltip>
-                            <Tooltip text="Refresh" />
+                            <Tooltip text="Обновить" />
                           </tooltip>
                         </Button>
                         <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" text="">
@@ -55,21 +55,22 @@
                             <Label fx:id="goHomeLabel" text="" />
                           </graphic>
                           <tooltip>
-                            <Tooltip text="Go Home" />
+                            <Tooltip text="Вернуться домой" />
                           </tooltip>
                         </Button>
                         <MenuButton fx:id="leftButton" minWidth="-Infinity" mnemonicParsing="false" text="" HBox.hgrow="NEVER">
                           <items>
-                            <MenuItem mnemonicParsing="false" onAction="#generateCheatSheet" text="Asciidoc Cheatsheet" />
-                            <MenuItem mnemonicParsing="false" onAction="#generateSampleBook" text="Sample Book" />
+                            <MenuItem mnemonicParsing="false" onAction="#generateCheatSheet" text="Asciidoc файл подсказок" />
+                            <MenuItem mnemonicParsing="false" onAction="#generateSampleBook" text="Пример книги" />
                               <SeparatorMenuItem />
-                              <MenuItem mnemonicParsing="false" onAction="#gitbookToAsciibook" text="Gitbook to Asciibook" />
+                              <MenuItem mnemonicParsing="false" onAction="#gitbookToAsciibook" text="конвертов Gitbook в Asciibook" />
                               <SeparatorMenuItem />
                             <MenuItem mnemonicParsing="false" onAction="#bugReport" text="Bug Report" />
                             <MenuItem mnemonicParsing="false" onAction="#openCommunityForum" text="Community Forum" />
                             <MenuItem mnemonicParsing="false" onAction="#openGitterChat" text="Gitter Chat" />
                               <SeparatorMenuItem />
                             <MenuItem mnemonicParsing="false" onAction="#openGithubPage" text="Github Page" />
+                            <MenuItem mnemonicParsing="false" onAction="#openAsciidoctorPage" text="Asciidoctor reference" />
                             <MenuItem mnemonicParsing="false" disable="true" text="" />
                           </items>
                           <HBox.margin>
@@ -85,16 +86,16 @@
                       <contextMenu>
                         <ContextMenu>
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Open" fx:id="openFileTreeItem" />
+                            <MenuItem mnemonicParsing="false" text="Открыть" fx:id="openFileTreeItem" />
                             <MenuItem id="openFolderTreeItem" mnemonicParsing="false" text="Browse" fx:id="openFolderTreeItem" />
                             <SeparatorMenuItem />
-                            <MenuItem mnemonicParsing="false" fx:id="createFile" text="Create" onAction="#createFile"/>
-                            <MenuItem mnemonicParsing="false" fx:id="renameFile" text="Rename" onAction="#renameFile"/>
+                            <MenuItem mnemonicParsing="false" fx:id="createFile" text="Создать" onAction="#createFile"/>
+                            <MenuItem mnemonicParsing="false" fx:id="renameFile" text="Переименовать" onAction="#renameFile"/>
                             <SeparatorMenuItem />
-                            <MenuItem mnemonicParsing="false" text="Copy Path" fx:id="copyPathTreeItem" />
-                            <MenuItem mnemonicParsing="false" text="Copy" fx:id="copyTreeItem" />
+                            <MenuItem mnemonicParsing="false" text="Копировать путь" fx:id="copyPathTreeItem" />
+                            <MenuItem mnemonicParsing="false" text="Копировать" fx:id="copyTreeItem" />
                             <SeparatorMenuItem />
-                            <MenuItem mnemonicParsing="false" text="Remove" fx:id="removePathItem" />
+                            <MenuItem mnemonicParsing="false" text="Удалить" fx:id="removePathItem" />
                           </items>
                         </ContextMenu>
                       </contextMenu>
@@ -109,17 +110,17 @@
                   <children>
                     <MenuBar fx:id="recentFilesBar" maxHeight="26.0" minHeight="26.0" styleClass="recentFilesBar">
                       <menus>
-                        <Menu mnemonicParsing="false" style="" text="Recent Files" />
+                        <Menu mnemonicParsing="false" style="" text="Недавние файлы" />
                       </menus>
                     </MenuBar>
                     <ListView id="recetListView" fx:id="recentListView" maxHeight="-1.0" styleClass="recentListView" VBox.vgrow="ALWAYS">
                       <contextMenu>
                         <ContextMenu>
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Open" fx:id="openFileListItem" />
-                            <MenuItem mnemonicParsing="false" text="Browse" fx:id="openFolderListItem" />
-                            <MenuItem mnemonicParsing="false" text="Copy Path" fx:id="copyPathListItem" />
-                            <MenuItem mnemonicParsing="false" text="Copy" fx:id="copyListItem" />
+                            <MenuItem mnemonicParsing="false" text="Открыть" fx:id="openFileListItem" />
+                            <MenuItem mnemonicParsing="false" text="Просмотреть папки" fx:id="openFolderListItem" />
+                            <MenuItem mnemonicParsing="false" text="Копировать путь" fx:id="copyPathListItem" />
+                            <MenuItem mnemonicParsing="false" text="Копировать" fx:id="copyListItem" />
                           </items>
                         </ContextMenu>
                       </contextMenu>
