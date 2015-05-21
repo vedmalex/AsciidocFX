@@ -194,12 +194,12 @@ public class TabService {
             tab.close();
         });
 
-        MenuItem menuItem0 = new MenuItem("Close");
+        MenuItem menuItem0 = new MenuItem("Закрыть");
         menuItem0.setOnAction(actionEvent -> {
             tab.close();
         });
 
-        MenuItem menuItem1 = new MenuItem("Close All");
+        MenuItem menuItem1 = new MenuItem("Закрыть все");
         menuItem1.setOnAction(actionEvent -> {
             ObservableList<Tab> tabs = controller.getTabPane().getTabs();
             ObservableList<Tab> clonedTabs = FXCollections.observableArrayList(tabs);
@@ -211,7 +211,7 @@ public class TabService {
             }
         });
 
-        MenuItem menuItem2 = new MenuItem("Close Others");
+        MenuItem menuItem2 = new MenuItem("Закрыть все кроме этого");
         menuItem2.setOnAction(actionEvent -> {
 
             ObservableList<Tab> blackList = FXCollections.observableArrayList();
@@ -241,7 +241,7 @@ public class TabService {
 //            }
 //        });
 
-        MenuItem menuItem4 = new MenuItem("Select Next Tab");
+        MenuItem menuItem4 = new MenuItem("Следующая вкладка");
         menuItem4.setOnAction(actionEvent -> {
             TabPane tabPane = controller.getTabPane();
             if (tabPane.getSelectionModel().isSelected(tabPane.getTabs().size() - 1))
@@ -250,7 +250,7 @@ public class TabService {
                 tabPane.getSelectionModel().selectNext();
         });
 
-        MenuItem menuItem5 = new MenuItem("Select Previous Tab");
+        MenuItem menuItem5 = new MenuItem("Предыдущая вкладка");
         menuItem5.setOnAction(actionEvent -> {
             SingleSelectionModel<Tab> selectionModel = controller.getTabPane().getSelectionModel();
             if (selectionModel.isSelected(0))
@@ -259,7 +259,7 @@ public class TabService {
                 selectionModel.selectPrevious();
         });
 
-        MenuItem menuItem6 = new MenuItem("Reopen Closed Tab");
+        MenuItem menuItem6 = new MenuItem("Открыть закрытую вкладку");
         menuItem6.setOnAction(actionEvent -> {
             if (closedPaths.size() > 0) {
                 int index = closedPaths.size() - 1;
@@ -270,7 +270,7 @@ public class TabService {
             }
         });
 
-        MenuItem menuItem7 = new MenuItem("Open File Location");
+        MenuItem menuItem7 = new MenuItem("Открыть папку с файлом");
 
         menuItem7.setOnAction(event -> {
             current.currentPath().ifPresent(path -> {
@@ -278,10 +278,10 @@ public class TabService {
             });
         });
 
-        MenuItem menuItem8 = new MenuItem("New File");
+        MenuItem menuItem8 = new MenuItem("Новый файл");
         menuItem8.setOnAction(controller::newDoc);
 
-        MenuItem gotoWorkdir = new MenuItem("Go to Workdir");
+        MenuItem gotoWorkdir = new MenuItem("Перейти в рабочую директорию");
         gotoWorkdir.setOnAction(event -> {
             current.currentPath().map(Path::getParent).ifPresent(directoryService::changeWorkigDir);
         });
