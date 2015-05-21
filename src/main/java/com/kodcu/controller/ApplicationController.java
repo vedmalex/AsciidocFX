@@ -1306,7 +1306,7 @@ public class ApplicationController extends TextWebSocketHandler implements Initi
 
     @FXML
     private void openAsciidoctorPage(ActionEvent actionEvent) {
-        getHostServices().showDocument("http://asciidoctor.org/docs/asciidoc-syntax-quick-referenceX");
+        getHostServices().showDocument("http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/");
     }
 
     @FXML
