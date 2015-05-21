@@ -42,7 +42,6 @@ public class FileController {
     @RequestMapping(value = {"/**/{extension:(?:\\w|\\W)+\\.(?:jpg|bmp|gif|jpeg|png|webp|svg|avi|mpeg|mp4|ogg|mov|wmv|flv)$}"}, method = RequestMethod.GET)
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         processRequest(request, response, true);
-        WebMvcAutoConfiguration t;
     }
 
     @RequestMapping(value = {"/**/{extension:(?:\\w|\\W)+\\.(?:jpg|bmp|gif|jpeg|png|webp|svg|avi|mpeg|mp4|ogg|mov|wmv|flv)$}"}, method = RequestMethod.HEAD)

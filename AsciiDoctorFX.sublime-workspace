@@ -1,0 +1,2504 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"al",
+				"algoliasearchHelper"
+			],
+			[
+				"ca",
+				"catalogID"
+			],
+			[
+				"as",
+				"async"
+			],
+			[
+				"cx",
+				"ctx"
+			],
+			[
+				"ref",
+				"refPk"
+			],
+			[
+				"end",
+				"endpoint"
+			],
+			[
+				"catalo",
+				"catalog"
+			],
+			[
+				"ten",
+				"tenantDb"
+			],
+			[
+				"conn",
+				"connectionStignArray"
+			],
+			[
+				"shado",
+				"shadows"
+			],
+			[
+				"tns",
+				"tsns"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"wo",
+				"workerName"
+			],
+			[
+				"pre",
+				"previousName"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"new",
+				"newItem"
+			],
+			[
+				"sta",
+				"start"
+			],
+			[
+				"run",
+				"runStage"
+			],
+			[
+				"v",
+				"var"
+			],
+			[
+				"promise",
+				"promised1"
+			],
+			[
+				"p",
+				"promise"
+			],
+			[
+				"promised",
+				"promised2"
+			],
+			[
+				"promis",
+				"promised"
+			],
+			[
+				"ctx",
+				"context"
+			],
+			[
+				"function",
+				"Function"
+			],
+			[
+				"d",
+				"doesNotThrow"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"Wra",
+				"fWrap"
+			],
+			[
+				"S",
+				"Stage"
+			],
+			[
+				"Re",
+				"fRetryOnError"
+			],
+			[
+				"va",
+				"validate"
+			],
+			[
+				"satge",
+				"stage"
+			],
+			[
+				"STAGE",
+				"stage"
+			],
+			[
+				"fu",
+				"Function"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"con",
+				"contstraint"
+			],
+			[
+				"res",
+				"resPromise"
+			],
+			[
+				"st",
+				"stage"
+			],
+			[
+				"instan",
+				"instanceof"
+			],
+			[
+				"head",
+				"head	Tag"
+			],
+			[
+				"Con",
+				"ControllerContext"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"wok",
+				"worker"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"woe",
+				"workerName"
+			],
+			[
+				"worker",
+				"workerName"
+			],
+			[
+				"WOR",
+				"worker"
+			],
+			[
+				"WORKER",
+				"workerName"
+			],
+			[
+				"extra",
+				"extractUserInfo"
+			],
+			[
+				"se",
+				"serializeUser"
+			],
+			[
+				"fake",
+				"fackeCall"
+			],
+			[
+				"suces",
+				"success"
+			],
+			[
+				"ma",
+				"maxDate"
+			],
+			[
+				"parse",
+				"parseJs"
+			],
+			[
+				"err",
+				"errloc"
+			],
+			[
+				"in",
+				"inspect"
+			],
+			[
+				"eval",
+				"safeEval"
+			],
+			[
+				"TEmpla",
+				"TemplateError"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"Templ",
+				"TemplateError"
+			],
+			[
+				"Tem",
+				"TemplateError"
+			],
+			[
+				"templa",
+				"templateName"
+			],
+			[
+				"ini",
+				"initPool"
+			],
+			[
+				"FUN",
+				"funcSteps"
+			],
+			[
+				"session",
+				"sessionID"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"path",
+				"pathlib"
+			],
+			[
+				"lo",
+				"lookupConnection"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"connect",
+				"connection"
+			],
+			[
+				"set",
+				"setDb"
+			],
+			[
+				"get",
+				"getDb"
+			],
+			[
+				"db",
+				"dbPool"
+			],
+			[
+				"profile",
+				"profile"
+			],
+			[
+				"thi",
+				"thing"
+			],
+			[
+				"tenan",
+				"tenantName"
+			],
+			[
+				"te",
+				"tenantDb"
+			],
+			[
+				"has",
+				"hasMany"
+			],
+			[
+				"chan",
+				"changeSet"
+			],
+			[
+				"belo",
+				"belongsTo"
+			],
+			[
+				"ser",
+				"serverModel"
+			],
+			[
+				"resol",
+				"resolveThingLocation"
+			],
+			[
+				"init",
+				"InitLocationCache"
+			],
+			[
+				"thin",
+				"thingLocationCache"
+			],
+			[
+				"nam",
+				"namespace"
+			],
+			[
+				"location",
+				"locationType"
+			],
+			[
+				"locatio",
+				"locationType"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"di",
+				"displayName"
+			],
+			[
+				"for",
+				"forf	fast for(...){}"
+			],
+			[
+				"Tena",
+				"Tenant"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"pip",
+				"pipeline"
+			],
+			[
+				"a",
+				"absPath"
+			],
+			[
+				"re",
+				"requires"
+			],
+			[
+				"to",
+				"toolbars"
+			],
+			[
+				"toolba",
+				"toolbars"
+			],
+			[
+				"toolbar",
+				"toolbarFuncs"
+			],
+			[
+				"too",
+				"toolBarItem"
+			],
+			[
+				"contro",
+				"control"
+			],
+			[
+				"tool",
+				"toolbars"
+			],
+			[
+				"han",
+				"handleError"
+			],
+			[
+				"Error",
+				"ErrorList"
+			],
+			[
+				"add",
+				"addError"
+			],
+			[
+				"show",
+				"showList"
+			],
+			[
+				"check",
+				"checkFile"
+			],
+			[
+				"roo",
+				"rootStat"
+			],
+			[
+				"chek",
+				"checkFile"
+			],
+			[
+				"compi",
+				"compileIt"
+			],
+			[
+				"stat",
+				"statSync"
+			],
+			[
+				"tyep",
+				"typeof"
+			],
+			[
+				"sku",
+				"skuName"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"model",
+				"modelTestSchema"
+			],
+			[
+				"http",
+				"https"
+			],
+			[
+				"current",
+				"currentTPL"
+			],
+			[
+				"exis",
+				"existsSync"
+			],
+			[
+				"loader",
+				"loader"
+			],
+			[
+				"lode",
+				"loaderForClient"
+			],
+			[
+				"grainjs",
+				"grainjsBundle"
+			],
+			[
+				"cata",
+				"catalogView"
+			],
+			[
+				"desig",
+				"designsCatalog"
+			],
+			[
+				"s",
+				"ssdev1"
+			],
+			[
+				"A",
+				"Arch"
+			],
+			[
+				"ss",
+				"sswf"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/resources/fxml/MarkdownTablePopup.fxml",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/resources/fxml/Scene.fxml",
+			"settings":
+			{
+				"buffer_size": 10931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pom.xml",
+			"settings":
+			{
+				"buffer_size": 11008,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/boot/AppStarter.java",
+			"settings":
+			{
+				"buffer_size": 8044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/service/shortcut/AsciidocShortcutService.java",
+			"settings":
+			{
+				"buffer_size": 8353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/service/shortcut/ShortcutService.java",
+			"settings":
+			{
+				"buffer_size": 1542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/service/DocumentService.java",
+			"settings":
+			{
+				"buffer_size": 5033,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 87 files for \"addStrikeThroughText\"\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/shortcut/AsciidocShortcutService.java:\n   93:         current.currentEngine().executeScript(\"editorMenu.asciidoc.addStrikeThroughText()\");\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/shortcut/MarkdownShortcutService.java:\n   94:         current.currentEngine().executeScript(\"editorMenu.markdown.addStrikeThroughText()\");\n\n2 matches across 2 files\n\n\nSearching 466 files for \"addStrikeThroughText\"\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/shortcut/AsciidocShortcutService.java:\n   93:         current.currentEngine().executeScript(\"editorMenu.asciidoc.addStrikeThroughText()\");\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/shortcut/MarkdownShortcutService.java:\n   94:         current.currentEngine().executeScript(\"editorMenu.markdown.addStrikeThroughText()\");\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/resources/public/js/editor-shortcuts.js:\n  204:         addStrikeThroughText: function () {\n  409:         addStrikeThroughText: function () {\n\n4 matches across 3 files\n\n\nSearching 466 files for \"openGithubPage\"\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/controller/ApplicationController.java:\n 1280:     private void openGithubPage(ActionEvent actionEvent) {\n\n/home/vedanta-krit/Work/AsciidocFX/src/main/resources/fxml/Scene.fxml:\n   72:                             <MenuItem mnemonicParsing=\"false\" onAction=\"#openGithubPage\" text=\"Github Page\" />\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 1587,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/controller/ApplicationController.java",
+			"settings":
+			{
+				"buffer_size": 48023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/component/AlertDialog.java",
+			"settings":
+			{
+				"buffer_size": 726,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/component/AlertHelper.java",
+			"settings":
+			{
+				"buffer_size": 1274,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "asciidocfx.install4j",
+			"settings":
+			{
+				"buffer_size": 96863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/component/MyTab.java",
+			"settings":
+			{
+				"buffer_size": 4622,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/component/RenameDialog.java",
+			"settings":
+			{
+				"buffer_size": 450,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/component/SaveDialog.java",
+			"settings":
+			{
+				"buffer_size": 559,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/service/shortcut/MarkdownShortcutService.java",
+			"settings":
+			{
+				"buffer_size": 6923,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/resources/public/js/editor-shortcuts.js",
+			"settings":
+			{
+				"buffer_size": 26868,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/java/com/kodcu/service/ui/EditorService.java",
+			"settings":
+			{
+				"buffer_size": 16327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".travis.yml",
+			"settings":
+			{
+				"buffer_size": 2877,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/GraphVizPrev/uml.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wo	",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"paca",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"set jsx",
+				"Set Syntax: JavaScript (JSX)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"tas",
+				"Set Syntax: TaskJuggler III"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pegj",
+				"Set Syntax: PEGjs"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"uml",
+				"Set Syntax: PlantUml"
+			],
+			[
+				"Plan",
+				"Set Syntax: PlantUml"
+			],
+			[
+				"plist",
+				"z:AAAPackageDev: Convert (YAML, JSON, PList) to…"
+			],
+			[
+				"convert",
+				"z:AAAPackageDev: Convert (YAML, JSON, PList) to…"
+			],
+			[
+				"aaade",
+				"z:AAAPackageDev: Convert (YAML, JSON, PList) to…"
+			],
+			[
+				"Dia",
+				"Set Syntax: Diagram"
+			],
+			[
+				"pre",
+				"Preview Graphviz Snippet using file"
+			],
+			[
+				"preview",
+				"Preview Graphviz Snippet using X11"
+			],
+			[
+				"previe",
+				"Preview Graphviz Snippet"
+			],
+			[
+				"Preview",
+				"Preview Graphviz Snippet"
+			],
+			[
+				"grap",
+				"Preview Graphviz Snippet"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nj",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"peg",
+				"Set Syntax: PEGjs"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"tj",
+				"Set Syntax: TaskJuggler III"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nhtm",
+				"Set Syntax: nHTML"
+			],
+			[
+				"njava",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"type",
+				"Compile TypeScript"
+			],
+			[
+				"typs",
+				"Compile TypeScript"
+			],
+			[
+				"ty",
+				"Compile TypeScript"
+			],
+			[
+				"nJa",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nJ",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nh",
+				"Set Syntax: nHTML"
+			],
+			[
+				"nhm",
+				"Set Syntax: nHTML"
+			],
+			[
+				"nHTML",
+				"Set Syntax: nHTML"
+			],
+			[
+				"nJS",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nHTM",
+				"Set Syntax: nHTML"
+			],
+			[
+				"n",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nH",
+				"Set Syntax: nHTML"
+			],
+			[
+				"m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javaScri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"JAva",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nJAva",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nja",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nJava",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nJasa",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"nJav",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nJA",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nJsa",
+				"Set Syntax: JSON Generic Array"
+			],
+			[
+				"toc",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"TO",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"markdownTo",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"update",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"inse",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"mard",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"Ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nHm",
+				"Set Syntax: nHTML"
+			],
+			[
+				"nah",
+				"Set Syntax: HTML"
+			],
+			[
+				"nHM",
+				"Set Syntax: nHTML"
+			],
+			[
+				"NjAVA",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"J",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javaS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javaScript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"nava",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"ma",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"nht",
+				"Set Syntax: nHTML"
+			],
+			[
+				"mak",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"scr",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"nJs",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"te",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS"
+			],
+			[
+				"multi",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mul",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"Mul",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sublime",
+				"Set Syntax: Sublime Text Syntax Definition"
+			],
+			[
+				"muti",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mu",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"Nj",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nHtml",
+				"Set Syntax: nHTML"
+			],
+			[
+				"njav",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"nhtml",
+				"Set Syntax: nHTML"
+			],
+			[
+				"snippe",
+				"Set Syntax: Sublime Text Snippet (Raw)"
+			],
+			[
+				"njs",
+				"Set Syntax: nJavaScript"
+			],
+			[
+				"njst",
+				"Set Syntax: njst"
+			],
+			[
+				"EJS",
+				"Set Syntax: EJS"
+			],
+			[
+				"jst",
+				"Set Syntax: njst"
+			],
+			[
+				"ECT",
+				"Set Syntax: ECT <%"
+			],
+			[
+				"sublime tes",
+				"Set Syntax: Sublime Text Syntax Definition"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"for",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"show",
+				"Show TODOs: Open files only"
+			],
+			[
+				"shoe",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"sho",
+				"Show TODOs: Open files only"
+			],
+			[
+				"Package Control:in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 553.0
+	},
+	"console":
+	{
+		"height": 278.0,
+		"history":
+		[
+			"view.run_command(\"plant_uml_preview\")",
+			"view.run_command(\"graphviz_preview_file_x\")",
+			"view.run_command(\"graphviz_preview_file_x_fdpwww\")",
+			"view.run_command(\"graphviz_preview_file_x_fdp\")",
+			"view.run_command(\"graphviz_preview_file\")",
+			"view.run_command(\"graphviz_preview_file_x11\")",
+			"view.run_command(\"graphviz_preview_file\")",
+			"status_message(11)",
+			"console.log(11)",
+			"view.run_command(\"graphviz_preview_file\")",
+			"view.file_name()",
+			"view.filename()",
+			"view.name()",
+			"view.name",
+			"view.filename",
+			"view",
+			"view.run_command(\"graphviz_preview\")",
+			"python",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/vedanta-krit/Work/AsciidocFX",
+		"/home/vedanta-krit/Work/AsciidocFX/src",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/shortcut",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/table",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/resources",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/resources/fxml"
+	],
+	"file_history":
+	[
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service/DirectoryService.java",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/resources/fxml/Scene.fxml",
+		"/home/vedanta-krit/Work/AsciidocFX/src/main/resources/fxml/AsciidocTablePopup.fxml",
+		"/home/vedanta-krit/Work/AsciidocFX/asciidocfx.install4j",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/NOTICE.md",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/LOGGERS.md",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/TODO",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules/algoliasearch/examples/instantsearch.html",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes/filterFacetsFn.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/package.json",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/algolia/searchHelper.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/package.json",
+		"/home/vedanta-krit/Work/grainjs-bin/Заметки по ReactJs.md",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules/algoliasearch/examples/instantsearch+faceting.html",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules/algoliasearch-helper/src/algoliasearch.helper.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/algolia/algoliaIndexer.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes/catalogEditor/products.js",
+		"/home/vedanta-krit/Work/pipeline.js/package.json",
+		"/home/vedanta-krit/Work/pipeline.js/lib/stage.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js/lib/stage.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/web/pipes/CheckUser.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/MetaCodegen/ComplexQuery.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/Новое в grainjs.md",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/install.sh",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.gen/profiles/default/query/usersCatalogList.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js-builder/lib/cfg.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/cfg.js",
+		"/home/vedanta-krit/Work/mongoose/lib/document.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose/lib/document.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose/lib/query.js",
+		"/home/vedanta-krit/Work/mongoose/lib/model.js",
+		"/home/vedanta-krit/Work/debinstaller/redeb_client_10.sh",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib/h2e4.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.multithread.js",
+		"/home/vedanta-krit/Work/grainjs-bin/todo-merchantz.md",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/restoreSchema.sh",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.config.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/wrap.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/timeout.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/Makefile",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/stage.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/sequential.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/retryonerror.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/pipeline.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/parallel.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/ifelse.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/dowhile.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/web/lib/registerController.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/grainjsdb.sh",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/grainjs.sh",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/start.multithread.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.bundle/grainjsBundle.js/queryBuilder/direct/QueryBuilder.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.gen/profiles/default/direct/Merchantz/Activity.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.bundle/grainjsBundle.js/lib/metaDataLoader.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.bundle/grainjsBundle.js/app/profiles/default/direct/transactionRunner.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/schema/Application.User/admin.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.bundle/grainjsBundle.js/app/profiles/default/direct/getModel.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js/dist/pipeline.dev.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose-autoincr/index.js",
+		"/home/vedanta-krit/Work/debinstaller/deb-src/sysroot/etc/bash_completion.d/grainjs",
+		"/home/vedanta-krit/Work/debinstaller/deb-src/DEBIAN/postinst",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/modules/auditTrail/eventProducer.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/lib/queries.removeProducts.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose/lib/model.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles/default/direct/transactionRunner.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/test/basic.test.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/base.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/multywayswitch.js",
+		"/home/vedanta-krit/Work/newReps/newatlantis/schema/Application.User/admin.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/requiredByApp1.js.json",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/public/ext4/src/dd/DragDropManager.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/csvImport/csvImport.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/csvImport/csvTest.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/export.js",
+		"/home/vedanta-krit/Work/mongoose/node_modules/mquery/lib/mquery.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators/server/package.json.njs",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.config.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators/server/Application.Config/application.config.njs",
+		"/home/vedanta-krit/Work/mongoose/package.json",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js/lib/util.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib/dbConnectionPool.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators/server/Application.Config/app.config.njs",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles/default/direct/userMonitor.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/server.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles/default/controller/Modeleditor.js",
+		"/home/vedanta-krit/Work/mongoose/lib/query.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/web/views/login.checkUser.nhtml",
+		"/home/vedanta-krit/Work/heroku/DisciplesDb/app.config.js",
+		"/home/vedanta-krit/Work/disciplesDb/readme.md",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/applicationBundle.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/checkRequire.js",
+		"/home/vedanta-krit/Work/disciplesDb/schema/Application.UserProfileTenant.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/generateIt.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/generate.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/import.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/timeTracer.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/pipe/stages/CreateMetaIndex.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/compareSchema.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/install.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands/lib/helpers.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.devInstance.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose-auto-increment/index.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles/default/direct/serverTrans.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/lib/queries.duplicateCatalog.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/connect-mongo/package.json",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.gen/profiles/default/schema/Merchantz/Activity.js",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/schema/Meta.Thing/Merchantz.Activity.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose/lib/index.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib/directEntry.js",
+		"/home/vedanta-krit/Work/pipeline.js/lib/util.js",
+		"/home/vedanta-krit/Work/pipeline.js-builder/lib/util.js",
+		"/home/vedanta-krit/Work/pipeline.js/index.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/schema/Application.UserProfileTenant.js",
+		"/home/vedanta-krit/Work/disciplesDb/app.config.js",
+		"/home/vedanta-krit/Work/mongoose/History.md",
+		"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/lib/uploadPostProcessors/saveUploadedFiles.js",
+		"/home/vedanta-krit/Work/heroku/DisciplesDb/TODO.adoc",
+		"/home/vedanta-krit/Work/mongoose/test/model.populate.test.js",
+		"/home/vedanta-krit/Work/disciplesDb/cloudinary.config.js",
+		"/home/vedanta-krit/Work/disciplesDb/modules/cloudinary/cloudinary.js",
+		"/home/vedanta-krit/Work/heroku/DisciplesDb/.env",
+		"/home/vedanta-krit/Work/Disciples.sublime-project",
+		"/home/vedanta-krit/Work/heroku/DisciplesDb/app/profiles/default/direct/global_blob.js",
+		"/home/vedanta-krit/Work/disciplesDb/app.bundle/DisciplesDb/app.config.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/createPipeIndex.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/createSchemaIndex.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/aoc/lib/aoc.js",
+		"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/body-parser/node_modules/raw-body/index.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 172.0,
+		"where_history":
+		[
+			"/home/vedanta-krit/Work/AsciidocFX/src",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/resources/fxml",
+			"/home/vedanta-krit/Work/AsciidocFX/src",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu",
+			"/home/vedanta-krit/Work/AsciidocFX",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/java/com/kodcu/service",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main/java",
+			"/home/vedanta-krit/Work/AsciidocFX/src/main",
+			"/home/vedanta-krit/Work/AsciidocFX/src",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules/algoliasearch/src",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/node_modules/algoliasearch",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/algolia",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.gen/profiles/default",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/MetaCodegen",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.gen",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.gen",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js",
+			"/home/vedanta-krit/Work/pipeline.js-builder/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/schema",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/mongoose",
+			"/home/vedanta-krit/Work/pipeline.js-builder/lib",
+			"/home/vedanta-krit/Work/mongoose/test",
+			"/home/vedanta-krit/Work/mongoose",
+			"/home/vedanta-krit/Work/mongoose/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/pipeline.js-builder/node_modules/pipeline.js",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/heroku/DisciplesDb/app",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/pipe",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/modules/csvImport",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/commands",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/genpack",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/pipe",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js/lib",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/pipe",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/client",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/client",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/client",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.gen",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web/pipes",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web/pipes",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/generators",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/genpack",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/app.gen",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules/SimpleStateMachine",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes/login",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes/catalogEditor",
+			"/home/vedanta-krit/Work/pipeline.js-builder/lib",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js-builder/lib",
+			"/home/vedanta-krit/Work/merchvm/gjs/node_modules/pipeline.js/lib",
+			"/home/vedanta-krit/Work/merchvm/work/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/auth",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app.gen",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/node_modules/pipeline.js",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/pipes",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib",
+			"/home/vedanta-krit/Work/pipeline.js/lib",
+			"/home/vedanta-krit/promises-benchmark/node_modules",
+			"/home/vedanta-krit/promises-benchmark/scenarios",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/pipeline.js/lib",
+			"/home/vedanta-krit/Work/pipeline.js-builder/lib",
+			"/home/vedanta-krit/Work/pipeline.js/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/client/lib/bootstrap",
+			"/home/vedanta-krit/Work/pipeline.js-builder/node_modules/js-schema",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/lib",
+			"/home/vedanta-krit/Work/pipeline.js/lib",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/lib",
+			"/home/vedanta-krit/Work/pipeline.js/lib",
+			"/home/vedanta-krit/Work/pipeline.js",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/web/views",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz",
+			"/home/vedanta-krit/Work/grainTest/merchantz/Merchantz/modules",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/app/profiles/default",
+			"/home/vedanta-krit/Work/grainjs-bin/grainjs/web"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"public",
+			"matchLineThroughText",
+			"formatText",
+			"matchBoldText",
+			"formatText",
+			"matchItalicizedText",
+			"addImageSection",
+			"openAsciidoctorPage",
+			"openGithubPage",
+			"<<<",
+			"include",
+			"::",
+			"addStrikeThroughText",
+			"Header",
+			"Table Generator",
+			"Hide/Show",
+			"(\"",
+			"hide",
+			"/home/travis/build/asciidocfx/AsciidocFX/install4j6",
+			"/home/travis/build/asciidocfx/AsciidocFX/install4j6\n",
+			"AsciidocFX_Windows_i586",
+			"AsciidocFX",
+			"asciidocfx",
+			"home/travis/build/asciidocfx/AsciidocFX/install4j6",
+			"Blocks",
+			"Styles.css",
+			"Ещ",
+			"addAdmonition",
+			"addBookHeader",
+			"editorMenu.asciidoc",
+			"_",
+			"client",
+			"index",
+			"prototype.set",
+			"_getHitsSearchParams",
+			"prototype.set",
+			"prototype.setQ",
+			"catalogsContext",
+			"facets",
+			"not allowed near",
+			"Boolean not allowed near",
+			"performSearch",
+			"Algolia",
+			"client",
+			"algoliasearchHelper",
+			"algolia-search",
+			"Algolia",
+			"performSearch",
+			"Helper",
+			"buildFacets",
+			"change",
+			"_change",
+			"search",
+			"initIndex",
+			"error",
+			"\"",
+			"slaves",
+			"usersCatalogList",
+			"StoredQuery.usersCatalogList",
+			"$toObject",
+			"<<<",
+			"populate",
+			"relate",
+			"locationType",
+			"LocationCache",
+			"runQuery",
+			"TIMEOUT",
+			"grainjs",
+			"gcc",
+			"process.next",
+			"this",
+			".cfg = ",
+			"cfg",
+			"this",
+			"\"action\": \"delete\"",
+			"cfg",
+			"prototype.",
+			"cfg.prototype",
+			"checkForChanges",
+			"IdentityCounter",
+			"(\n",
+			"autoInc",
+			"User_id",
+			"autoinc",
+			"plugin",
+			"build",
+			"defineKey",
+			"tags",
+			"transactionCatalog",
+			"useProperties",
+			"wasPopulated",
+			"__handleSave",
+			"226",
+			"node-gyp",
+			"dictionaryManyFn",
+			"dictionary",
+			"dictionaryManyFn",
+			"//",
+			"__this",
+			"this",
+			"getFindCallback",
+			"1183",
+			"getModelsMapForPopulate",
+			"getFindCallback",
+			"fields",
+			"defaultOptions",
+			"before all",
+			".[",
+			"getFindCallback",
+			"preparePopulationOptionsMQ",
+			"getFindCallback",
+			"refPk",
+			"async",
+			"Query",
+			"getIdsForAndAddIdsInMapPopulate",
+			"onsole.log",
+			"refPath",
+			"getModelsMapForPopulate",
+			"getIdsForAndAddIdsInMapPopulate",
+			"sourceP",
+			"fileReader",
+			"fileUploader",
+			"amazon",
+			"LocationCache",
+			"locationType",
+			"downloadBLOB",
+			"uploadFile",
+			".once("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"err",
+			"'",
+			"\\n",
+			"return",
+			"return done(",
+			"ctx,",
+			", function(ctx",
+			"\\n",
+			"'",
+			"options:{lean:true},\n",
+			"options:{lean:true},\n    // так создавать соединение к базе данных;\n    pipeFunction();\n  });\n",
+			"  ctx.$options.req.sessionStore.sellerdb = mongoose.createConnection(ctx.$options.req.session.authInfo.uiProfile.tenantDbUrl, function() {\n    // так создавать соединение к базе данных;\n    pipeFunction();\n  });\n",
+			"require(global.USEGLOBAL('./pipe'));",
+			"app/profiles/default/direct",
+			"'",
+			"'Modeleditor",
+			"Modeleditor",
+			"thingItem",
+			"err",
+			"reach",
+			"__children",
+			" $2 $1",
+			"$2 $1",
+			"__",
+			"+7",
+			"$1$2$3$4",
+			"\"+7",
+			"var middleware = require(RESOLVEONE('web/lib/middleware.js'));",
+			"RESOLVEONE('web/lib/middleware.js')",
+			"ctx.$options.req",
+			"$$$defaultProfile",
+			"",
+			"{\n	strict: 1,\n	loose: 1,\n	structure: 1,\n	diff: 1\n}",
+			"Compare",
+			"\"name\":",
+			"//\"labelAlign",
+			"//labelAlign",
+			"Grainjs",
+			"\"app.",
+			"app",
+			"'app.",
+			"'qb",
+			".qb",
+			"QB",
+			"\\u",
+			" \\u",
+			"type: StringRef",
+			"",
+			"'",
+			"",
+			"uml",
+			"UML:",
+			"Meta",
+			"Relation",
+			"DepCreates",
+			"Thing",
+			"$1",
+			"../public/images",
+			"../images/uncheckbox.png",
+			"db",
+			"grain-ria-desktop",
+			"sencha-desktop",
+			"generators",
+			" \n \n",
+			" ",
+			".\n\n\n",
+			"",
+			"getValue(\"$1\",settings)",
+			"getValue(\"$1\",item)",
+			"getValue(\"$1\",item),",
+			"",
+			"get",
+			"getItems(load)",
+			".make(100)",
+			"false",
+			"}],",
+			"},",
+			" ",
+			"",
+			"relations",
+			"",
+			"--",
+			"",
+			";",
+			"-> object",
+			"",
+			"max-age=0",
+			"",
+			"intact",
+			"= src[prop] ? src[prop].length : 0;",
+			"for",
+			"",
+			"Client",
+			"",
+			"\"",
+			"",
+			"/",
+			"",
+			"ipel",
+			"$$$Namespace",
+			"// debugger",
+			");\\nE",
+			"root",
+			"1",
+			"\"",
+			"pathlib",
+			"helpers.resolveNames",
+			"if (err) console.log(err);",
+			"<work folder>",
+			"\"",
+			"\"$ne\"",
+			"",
+			"property",
+			"\\);\\n var",
+			"\\);\\n",
+			"\\),\\n var",
+			"prototype.schema",
+			".exec(",
+			"prototype.schema",
+			"var db = null;",
+			"Array.isArray",
+			"fs.exists",
+			"**",
+			"**КОММЕНТАРИЙ**:",
+			"\\t",
+			">",
+			"ТЕКСТ",
+			"*КОММЕНТАРИЙ:*"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 15,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/resources/fxml/MarkdownTablePopup.fxml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1362,
+								1362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/resources/fxml/Scene.fxml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5009,
+								5009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pom.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 85.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/java/com/kodcu/boot/AppStarter.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3810,
+								3810
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1067.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/java/com/kodcu/service/shortcut/AsciidocShortcutService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8350,
+								8350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2925.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/java/com/kodcu/service/shortcut/ShortcutService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1536,
+								1536
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 124.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/java/com/kodcu/service/DocumentService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3712,
+								3712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1587,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										227,
+										247
+									],
+									[
+										434,
+										454
+									],
+									[
+										716,
+										736
+									],
+									[
+										923,
+										943
+									],
+									[
+										1050,
+										1070
+									],
+									[
+										1101,
+										1121
+									],
+									[
+										1329,
+										1343
+									],
+									[
+										1523,
+										1537
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1338,
+								1338
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/main/java/com/kodcu/controller/ApplicationController.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42385,
+								42385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18805.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/main/java/com/kodcu/component/AlertDialog.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/main/java/com/kodcu/component/AlertHelper.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "asciidocfx.install4j",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93276,
+								93276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/main/java/com/kodcu/component/MyTab.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2691,
+								2691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/main/java/com/kodcu/component/RenameDialog.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/main/java/com/kodcu/component/SaveDialog.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/main/java/com/kodcu/service/shortcut/MarkdownShortcutService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5721,
+								5722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3318.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 16,
+					"file": "src/main/resources/public/js/editor-shortcuts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10179,
+								10179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3775.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/main/java/com/kodcu/service/ui/EditorService.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12242,
+								12242
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3513.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": ".travis.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 24.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.485480660081,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 112.0
+	},
+	"output.GoSublime-source-output":
+	{
+		"height": 112.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 112.0
+	},
+	"output.aaa_package_dev":
+	{
+		"height": 46.0
+	},
+	"output.exec":
+	{
+		"height": 189.0
+	},
+	"output.find_results":
+	{
+		"height": 349.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 121.0
+	},
+	"output.package_dev":
+	{
+		"height": 118.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 51.0
+	},
+	"pinned_build_system": "",
+	"project": "AsciiDoctorFX.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Work/newReps/newatlantis/Atlantis.sublime-project"
+			],
+			[
+				"1",
+				"/home/Video/2013.01 - БВСМ/набор лекций.sublime-project"
+			]
+		],
+		"width": 706.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 471.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 487.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

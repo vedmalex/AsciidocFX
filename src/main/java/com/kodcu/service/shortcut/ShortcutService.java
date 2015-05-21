@@ -46,4 +46,16 @@ public interface ShortcutService {
     void addBubbleChart();
     void addStackedAreaChart();
     void addStackedBarChart();
+    void addFootnote();
+    void addFootnoteRef();
+    void addMenuSelection();
+    void addKeybShortcut();
+    void addCheckList();
+    void addIncludeFile();
+    void addExplicitId();
+    void addPageBreak();
+    void addHorizontalRule();
+    void addInlineAnchor();
+    void addInternalReference();
+    void addInternalNamedReference();
 }

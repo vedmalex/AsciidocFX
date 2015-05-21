@@ -234,4 +234,65 @@ public class MarkdownShortcutService implements ShortcutService {
     public void addStackedBarChart() {
         AlertHelper.notImplementedDialog();
     }
+
+    @Override
+    public void addFootnote() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addFootnoteRef() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addMenuSelection() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addKeybShortcut() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addCheckList() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addIncludeFile() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addExplicitId() {
+        AlertHelper.notImplementedDialog();
+    }
+
+    @Override
+    public void addPageBreak() {
+        AlertHelper.notImplementedDialog();
+    }
+    
+    @Override
+    public void addHorizontalRule() {
+        AlertHelper.notImplementedDialog();
+    }
+  
+    @Override
+    public void addInlineAnchor() {
+        AlertHelper.notImplementedDialog();
+    }       
+    
+    @Override
+    public void addInternalReference() {
+        AlertHelper.notImplementedDialog();
+    }
+    
+    @Override
+    public void addInternalNamedReference() {
+        AlertHelper.notImplementedDialog();
+    } 
+
 }

@@ -227,4 +227,64 @@ public class AsciidocShortcutService implements ShortcutService {
     public void addStackedBarChart() {
         current.currentEngine().executeScript("editorMenu.asciidoc.addStackedBarChart()");
     }
+
+    @Override
+    public void addFootnote() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addFootnote()");
+    }
+
+    @Override
+    public void addFootnoteRef() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addFootnoteRef()");
+    }
+
+    @Override
+    public void addMenuSelection() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addMenuSelection()");
+    }
+
+    @Override
+    public void addKeybShortcut() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addKeybShortcut()");
+    }
+
+    @Override
+    public void addCheckList() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addCheckList()");
+    }
+
+    @Override
+    public void addIncludeFile() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addIncludeFile()");
+    }
+
+    @Override
+    public void addExplicitId() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addExplicitId()");
+    }
+
+    @Override
+    public void addPageBreak() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addPageBreak()");
+    }
+    
+    @Override
+    public void addHorizontalRule() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addHorizontalRule()");
+    }
+  
+    @Override
+    public void addInlineAnchor() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addInlineAnchor()");
+    }       
+    
+    @Override
+    public void addInternalReference() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addInternalReference()");
+    }
+    
+    @Override
+    public void addInternalNamedReference() {
+        current.currentEngine().executeScript("editorMenu.asciidoc.addInternalNamedReference()");
+    } 
 }

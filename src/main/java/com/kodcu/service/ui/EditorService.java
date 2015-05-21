@@ -247,6 +247,54 @@ public class EditorService {
             shortcutProvider.getProvider().addQuote();
         }));
 
+        blocks.getItems().add(MenuItemBuilt.item("Сноска").click(event -> {
+            shortcutProvider.getProvider().addFootnote();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("сноска со ссылкой").click(event -> {
+            shortcutProvider.getProvider().addFootnoteRef();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Выбор элемента меню").click(event -> {
+            shortcutProvider.getProvider().addMenuSelection();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Горячая клавиша").click(event -> {
+            shortcutProvider.getProvider().addKeybShortcut();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Перечень").click(event -> {
+            shortcutProvider.getProvider().addCheckList();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Встроить файл").click(event -> {
+            shortcutProvider.getProvider().addIncludeFile();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Явно указать id для заголовка").click(event -> {
+            shortcutProvider.getProvider().addExplicitId();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Разрыв страницы").click(event -> {
+            shortcutProvider.getProvider().addPageBreak();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Горизонтальная линия").click(event -> {
+            shortcutProvider.getProvider().addHorizontalRule();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Inline anchor").click(event -> {
+            shortcutProvider.getProvider().addInlineAnchor();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Ссылка внутри документа").click(event -> {
+            shortcutProvider.getProvider().addInternalReference();
+        }));
+
+        blocks.getItems().add(MenuItemBuilt.item("Ссылка на внешний документ").click(event -> {
+            shortcutProvider.getProvider().addInternalNamedReference();
+        }));
+
         final MenuButton documentHelpers = new MenuButton("Части документа");
         documentHelpers.setFocusTraversable(false);
         documentHelpers.getItems().add(MenuItemBuilt.item("Книга").click(event -> {

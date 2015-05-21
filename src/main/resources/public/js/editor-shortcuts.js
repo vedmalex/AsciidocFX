@@ -1,22 +1,26 @@
 function addNewCommand(key, value) {
-    var name = key + value;
-    editor.commands.addCommand({
-        name: name,
-        bindKey: {
-            win: key,
-            mac: key
-        },
-        exec: function (editor) {
-            editor.insert(value);
-        },
-        readOnly: true
-    });
-}
+        var name = key + value;
+        editor.commands.addCommand({
+            name: name,
+            bindKey: {
+                win: key,
+                mac: key
+            },
+            exec: function(editor) {
+                editor.insert(value);
+            },
+            readOnly: true
+        });
+    }
+
 // default keys https://searchcode.com/codesearch/view/58959997/
 editor.commands.addCommand({
     name: 'cut-1',
-    bindKey: {win: 'Ctrl-X', mac: 'Command-X'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-X',
+        mac: 'Command-X'
+    },
+    exec: function(editor) {
 
         var textRange = editor.session.getTextRange(editor.getSelectionRange());
 
@@ -34,8 +38,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'close-1',
-    bindKey: {win: 'Ctrl-W', mac: 'Command-W'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-W',
+        mac: 'Command-W'
+    },
+    exec: function(editor) {
         app.saveAndCloseCurrentTab();
     },
     readOnly: true
@@ -43,8 +50,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'copy-1',
-    bindKey: {win: 'Ctrl-C', mac: 'Command-C'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-C',
+        mac: 'Command-C'
+    },
+    exec: function(editor) {
         app.cutCopy(editor.session.getTextRange(editor.getSelectionRange()));
     },
     readOnly: false
@@ -52,8 +62,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'paste-1',
-    bindKey: {win: 'Ctrl-V', mac: 'Command-V'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-V',
+        mac: 'Command-V'
+    },
+    exec: function(editor) {
         app.paste();
     },
     readOnly: true
@@ -61,8 +74,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'paste-raw-1',
-    bindKey: {win: 'Ctrl-Shift-V', mac: 'Command-Shift-V'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-Shift-V',
+        mac: 'Command-Shift-V'
+    },
+    exec: function(editor) {
         app.pasteRaw();
     },
     readOnly: true
@@ -70,8 +86,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'ctrl-enter-1',
-    bindKey: {win: 'Ctrl-Enter', mac: 'Command-Enter'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-Enter',
+        mac: 'Command-Enter'
+    },
+    exec: function(editor) {
         editor.insert("\n");
     },
     readOnly: true
@@ -79,14 +98,17 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'ctrl-duplicate',
-    bindKey: {win: 'Ctrl-D', mac: 'Command-D'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-D',
+        mac: 'Command-D'
+    },
+    exec: function(editor) {
         editor.copyLinesDown();
     },
     readOnly: true
 });
 
-var formatText = function (editor, matcher, firstCharacter, lastCharacter) {
+var formatText = function(editor, matcher, firstCharacter, lastCharacter) {
 
     var range = editor.getSelectionRange();
     var selectedText = editor.session.getTextRange(range);
@@ -97,8 +119,7 @@ var formatText = function (editor, matcher, firstCharacter, lastCharacter) {
     if (decorated) {
         selectedText = decorated[2];
         editor.session.replace(range, selectedText);
-    }
-    else if (!matchAnyTextFormatting(selectedText, firstCharLength, lastCharLength, matcher)) {
+    } else if (!matchAnyTextFormatting(selectedText, firstCharLength, lastCharLength, matcher)) {
 
         if (isInlineAsciiDocFormatting(firstCharacter, lastCharacter)) {
 
@@ -153,7 +174,13 @@ var formatText = function (editor, matcher, firstCharacter, lastCharacter) {
         if (editor.getSession().getMode().$id != "ace/mode/asciidoc")
             return false;
 
-        return [["*", "*"], ["_", "_"], ["`", "`"], ["[underline]#", "#"], ["[line-through]#", "#"]].some(function (element, index, array) {
+        return [
+            ["*", "*"],
+            ["_", "_"],
+            ["`", "`"],
+            ["[underline]#", "#"],
+            ["[line-through]#", "#"]
+        ].some(function(element, index, array) {
             return (firstChar === element[0] && lastChar === element[1]);
         });
     }
@@ -175,39 +202,67 @@ var formatText = function (editor, matcher, firstCharacter, lastCharacter) {
     function escapeSpecialChars(text) {
         return text.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
+};
+
+// выбрать текущее слово
+
+// navigateWordLeft() выбрать слово
+// navigateWordRight()
+function ReplaceInsertWrap(insertee, wrap) {
+    var lines = insertee.match(/\n/ig).length;
+    var range = editor.getSelectionRange();
+    if (!wrap) {
+        editor.removeToLineStart();
+    } else {
+        editor.gotoLine(range.end.row, 0, true);
+    }
+    editor.insert(wrap);
+    if (!wrap) {
+        editor.gotoLine(range.end.row + 3, 0, true);
+    } else {
+        editor.gotoLine(range.end.row + 4, 0, true);
+    }
 }
 
-function addFxChart(chartType) {
+function addFxChart(chartType, wrap) {
     var range = editor.getSelectionRange();
-    editor.removeToLineStart();
-    editor.insert("[chart," + chartType + ",file=\"\"]\n--\n\n--");
-    editor.gotoLine(range.end.row + 3, 0, true);
+    if (!wrap) {
+        editor.removeToLineStart();
+    } else {
+        editor.gotoLine(range.end.row, 0, true);
+    }
+    editor.insert("[chart," + chartType + ",file=\"\"]\n--\n\n--\n");
+    if (!wrap) {
+        editor.gotoLine(range.end.row + 3, 0, true);
+    } else {
+        editor.gotoLine(range.end.row + 4, 0, true);
+    }
 }
 
 var editorMenu = {
     asciidoc: {
-        boldText: function () {
+        boldText: function() {
             formatText(editor, matchBoldText, "*", "*");
         },
-        italicizeText: function () {
+        italicizeText: function() {
             formatText(editor, matchItalicizedText, "_", "_");
         },
-        superScript: function () {
+        superScript: function() {
             formatText(editor, matchSuperScriptText, "^", "^");
         },
-        subScript: function () {
+        subScript: function() {
             formatText(editor, matchSubScriptText, "~", "~");
         },
-        underlinedText: function () {
+        underlinedText: function() {
             formatText(editor, matchUnderlineText, "[underline]#", "#");
         },
-        addStrikeThroughText: function () {
+        addStrikeThroughText: function() {
             formatText(editor, matchLineThroughText, "[line-through]#", "#");
         },
-        highlightedText: function () {
+        highlightedText: function() {
             formatText(editor, matchHighlightedText, "#", "#");
         },
-        addHyperLink: function () {
+        addHyperLink: function() {
             var cursorPosition = editor.getCursorPosition();
             var session = editor.getSession();
             var pasted = app.clipboardValue();
@@ -220,27 +275,76 @@ var editorMenu = {
             }
             session.insert(cursorPosition, "http://url[text]");
         },
-        addSourceCode: function (lang) {
+        addSourceCode: function(lang) {
             var range = editor.getSelectionRange();
-            editor.removeToLineStart();
-
-            editor.insert("[source," + lang + "]\n----\n\n----");
-
-            editor.gotoLine(range.end.row + 3, 0, true);
+            editor.gotoLine(range.end.row, 0, true);
+            editor.insert("[source," + lang + "]\n----\n\n----\n");
+            editor.gotoLine(range.end.row + 4, 0, true);
         },
-        addQuote: function () {
+        addQuote: function() {
             var range = editor.getSelectionRange();
-            editor.removeToLineStart();
-
-            editor.insert("[quote,Rūmī]\n____\nPatience is the key to joy.\n____");
-
-            editor.gotoLine(range.end.row + 3, 0, true);
+            editor.gotoLine(range.end.row + 1, 0, true);
+            editor.insert("[quote, Шрила Прабхупада]\n____\n Повторяй Харе Кришна и будь Счастлив!\n____\n");
+            editor.gotoLine(range.end.row + 5, 0, true);
         },
-        addImageSection: function () {
-            editor.removeToLineStart();
-            editor.insert("image::images/image.png[]");
+        addFootnote: function() {
+            editor.insert(".footnote:[Повторяй Харе Кришна и Будь Счастлив!] ");
         },
-        addHeading: function () {
+        addFootnoteRef: function() {
+            editor.insert(".footnoteref:[chantHareKrishna, Повторяй Харе Кришна и Будь Счастлив!] ");
+        },
+        addMenuSelection: function() {
+            editor.insert(" menu:File[Exit] ");
+        },
+        addKeybShortcut: function() {
+            editor.insert(" kbd:[F12 + ... ] ");
+        },
+        addCheckList: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row + 1, 0, true);
+            editor.insert("\n - [*] checked\n - [x] checked\n - [ ] not checked\n");
+            editor.gotoLine(range.end.row + 2, range.end.column, true);
+        },
+        addIncludeFile: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row + 1, 0, true);
+            editor.insert("\ninclude::filename.asc[]");
+            editor.gotoLine(range.end.row + 2, range.end.column, true);
+        },
+        addExplicitId: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row, 0, true);
+            editor.insert("[[primitives-nulls]]\n");
+            editor.gotoLine(range.end.row + 1, range.end.column, true);
+        },
+        addPageBreak: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row + 1, 0, true);
+            editor.insert("<<<\n");
+            editor.gotoLine(range.end.row + 2, range.end.column, true);
+        },
+        addHorizontalRule: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row, 0, true);
+            editor.insert("'''");
+            editor.gotoLine(range.end.row + 1, range.end.column, true);
+        },
+        addInlineAnchor: function() {
+            editor.insert(" anchor:anchorname[] ");
+        },
+        addInternalReference: function() {
+            formatText(editor, matchReference, " <<", ">> ");
+        },
+        addInternalNamedReference: function() {
+            formatText(editor, matchReference, " <<", ", название>> ");
+        },
+        addImageSection: function() {
+            var range = editor.getSelectionRange();
+            editor.gotoLine(range.end.row + 1, 0, true);
+            editor.insert("image::images/image.png[]\n");
+            editor.gotoLine(range.end.row + 1, range.end.column, true);
+        },
+        addHeading: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
@@ -248,171 +352,171 @@ var editorMenu = {
             var first = line[0] || "";
             session.insert(cursorPosition, (first == "=") ? "=" : "= ");
         },
-        addOlList: function () {
+        addOlList: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
             session.insert(cursorPosition, "1. ");
         },
-        addUlList: function () {
+        addUlList: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
             session.insert(cursorPosition, "* ");
         },
-        addAdmonition: function (type) {
+        addAdmonition: function(type) {
             var range = editor.getSelectionRange();
-            editor.removeToLineStart();
+            editor.gotoLine(range.end.row + 1, 0, true);
             editor.insert("[" + type + "]\n====\n\n====");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addSidebarBlock: function () {
+        addSidebarBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
-            editor.insert(".Title\n****\n\n****");
+            editor.insert(".Title\n****\n\n****\n");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addExampleBlock: function () {
+        addExampleBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert(".Title\n====\n\n====");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addPassthroughBlock: function () {
+        addPassthroughBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert("++++\n\n++++");
             editor.gotoLine(range.end.row + 2, 0, true);
         },
-        addIndexSelection: function () {
+        addIndexSelection: function() {
             var range = editor.getSelectionRange();
             var selectedText = editor.session.getTextRange(range);
             if (selectedText)
                 if (selectedText.trim() != "")
                     editor.insert("(((" + selectedText + ")))" + selectedText);
         },
-        addBookHeader: function () {
+        addBookHeader: function() {
             editor.removeToLineStart();
             editor.insert("= Book Name\nAuthor Name\n:doctype: book\n:encoding: utf-8\n:lang: en\n:toc: left\n:numbered:\n\n\n");
         },
-        addArticleHeader: function () {
+        addArticleHeader: function() {
             editor.removeToLineStart();
             editor.insert("= Article Name\nAuthor Name\n:doctype: article\n:encoding: utf-8\n:lang: en\n:toc: left\n:numbered:\n\n\n");
         },
-        addColophon: function () {
+        addColophon: function() {
             editor.removeToLineStart();
             editor.insert("[colophon]\n== Example Colophon\n\nText at the end of a book describing facts about its production.");
         },
-        addPreface: function () {
+        addPreface: function() {
             editor.removeToLineStart();
             editor.insert("[preface]\n== Example Preface\n\nOptional preface.");
         },
-        addDedication: function () {
+        addDedication: function() {
             editor.removeToLineStart();
             editor.insert("[dedication]\n== Example Dedication\n\nOptional dedication.");
         },
-        addAppendix: function () {
+        addAppendix: function() {
             editor.removeToLineStart();
             editor.insert("[appendix]\n== Example Appendix\n\nOne or more optional appendixes go here at section level 1.");
         },
-        addGlossary: function () {
+        addGlossary: function() {
             editor.removeToLineStart();
             editor.insert("[glossary]\n== Example Glossary\n\n" +
-            "Glossaries are optional. Glossaries entries are an example of a style of AsciiDoc labeled lists.\n\n" +
-            "[glossary]\n" +
-            "A glossary term::\n\tThe corresponding (indented) definition.\n\n" +
-            "A second glossary term::\n\tThe corresponding (indented) definition.");
+                "Glossaries are optional. Glossaries entries are an example of a style of AsciiDoc labeled lists.\n\n" +
+                "[glossary]\n" +
+                "A glossary term::\n\tThe corresponding (indented) definition.\n\n" +
+                "A second glossary term::\n\tThe corresponding (indented) definition.");
         },
-        addBibliography: function () {
+        addBibliography: function() {
             editor.removeToLineStart();
             editor.insert("[bibliography]\n" +
-            "== Example Bibliography\n" +
-            "\n" +
-            "The bibliography list is a style of AsciiDoc bulleted list.\n" +
-            "\n" +
-            "[bibliography]\n" +
-            ".Books\n" +
-            "- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix\n" +
-            "  Programming'. Addison-Wesley. ISBN 0-13-142901-9.\n" +
-            "- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.\n" +
-            "  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.\n" +
-            "  ISBN 1-56592-580-7.");
+                "== Example Bibliography\n" +
+                "\n" +
+                "The bibliography list is a style of AsciiDoc bulleted list.\n" +
+                "\n" +
+                "[bibliography]\n" +
+                ".Books\n" +
+                "- [[[taoup]]] Eric Steven Raymond. 'The Art of Unix\n" +
+                "  Programming'. Addison-Wesley. ISBN 0-13-142901-9.\n" +
+                "- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.\n" +
+                "  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.\n" +
+                "  ISBN 1-56592-580-7.");
         },
-        addIndex: function () {
+        addIndex: function() {
             editor.removeToLineStart();
             editor.insert("[index]\n" +
-            "== Example Index\n" +
-            "////////////////////////////////////////////////////////////////\n" +
-            "The index is normally left completely empty, it's contents being\n" +
-            "generated automatically by the DocBook toolchain.\n" +
-            "////////////////////////////////////////////////////////////////  ");
+                "== Example Index\n" +
+                "////////////////////////////////////////////////////////////////\n" +
+                "The index is normally left completely empty, it's contents being\n" +
+                "generated automatically by the DocBook toolchain.\n" +
+                "////////////////////////////////////////////////////////////////  ");
         },
-        addMathBlock: function () {
+        addMathBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert("[math,file=\"\"]\n--\n\n--");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addUmlBlock: function () {
+        addUmlBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert("[uml,file=\"\"]\n--\n\n--");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addTreeBlock: function () {
+        addTreeBlock: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert("[tree,file=\"\"]\n--\n\n--");
             editor.gotoLine(range.end.row + 3, 0, true);
         },
-        addPieChart: function () {
+        addPieChart: function() {
             addFxChart("pie");
         },
-        addBarChart: function () {
+        addBarChart: function() {
             addFxChart("bar");
         },
-        addAreaChart: function () {
+        addAreaChart: function() {
             addFxChart("area");
         },
-        addLineChart: function () {
+        addLineChart: function() {
             addFxChart("line");
         },
-        addScatterChart: function () {
+        addScatterChart: function() {
             addFxChart("scatter");
         },
-        addBubbleChart: function () {
+        addBubbleChart: function() {
             addFxChart("bubble");
         },
-        addStackedAreaChart: function () {
+        addStackedAreaChart: function() {
             addFxChart("\"stacked-area\"");
         },
-        addStackedBarChart: function () {
+        addStackedBarChart: function() {
             addFxChart("\"stacked-bar\"");
         }
     },
     markdown: {
-        boldText: function () {
+        boldText: function() {
             formatText(editor, matchBoldText, "**", "**");
         },
-        italicizeText: function () {
+        italicizeText: function() {
             formatText(editor, matchItalicizedText, "_", "_");
         },
-        superScript: function () {
+        superScript: function() {
             formatText(editor, matchMarkdownSuperScriptText, "<sup>", "</sup>");
         },
-        subScript: function () {
+        subScript: function() {
             formatText(editor, matchMarkdownSubScriptText, "<sub>", "</sub>");
         },
-        underlinedText: function () {
+        underlinedText: function() {
             formatText(editor, matchMarkdownUnderlineText, "<u>", "</u>");
         },
-        addStrikeThroughText: function () {
+        addStrikeThroughText: function() {
             formatText(editor, matchMarkdownStrikeThroughText, "~~", "~~");
         },
-        highlightedText: function () {
+        highlightedText: function() {
             formatText(editor, matchHighlightedText, "#", "#");
         },
-        addHyperLink: function () {
+        addHyperLink: function() {
             var cursorPosition = editor.getCursorPosition();
             var session = editor.getSession();
             var pasted = app.clipboardValue();
@@ -422,23 +526,23 @@ var editorMenu = {
             }
             session.insert(cursorPosition, "[text](url)");
         },
-        addSourceCode: function (lang) {
+        addSourceCode: function(lang) {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
             editor.insert("```" + lang + "\n\n```");
             editor.gotoLine(range.end.row + 2, 0, true);
         },
-        addQuote: function () {
+        addQuote: function() {
             var range = editor.getSelectionRange();
             editor.removeToLineStart();
 
-            editor.insert("\n> Patience is the key to joy.\n");
+            editor.insert("\n> Повторяй Харе Кришна и Будь Счастлив!\n");
         },
-        addImageSection: function () {
+        addImageSection: function() {
             editor.removeToLineStart();
             editor.insert("![Alt text](images/image.png)");
         },
-        addHeading: function () {
+        addHeading: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
@@ -446,13 +550,13 @@ var editorMenu = {
             var first = line[0] || "";
             session.insert(cursorPosition, (first == "#") ? "#" : "# ");
         },
-        addOlList: function () {
+        addOlList: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
             session.insert(cursorPosition, "1. ");
         },
-        addUlList: function () {
+        addUlList: function() {
             var cursorPosition = editor.getCursorPosition();
             cursorPosition.column = 0;
             var session = editor.getSession();
@@ -473,8 +577,11 @@ function showLineNumbers() {
 
 editor.commands.addCommand({
     name: 'underline-selected',
-    bindKey: {win: 'Ctrl-U', mac: 'Command-U'},
-    exec: function () {
+    bindKey: {
+        win: 'Ctrl-U',
+        mac: 'Command-U'
+    },
+    exec: function() {
         app.getShortcutProvider().getProvider().addUnderline();
     },
     readOnly: true
@@ -482,8 +589,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'bold-selected',
-    bindKey: {win: 'Ctrl-B', mac: 'Command-B'},
-    exec: function () {
+    bindKey: {
+        win: 'Ctrl-B',
+        mac: 'Command-B'
+    },
+    exec: function() {
         app.getShortcutProvider().getProvider().addBold();
     },
     readOnly: true
@@ -491,8 +601,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'highlight-selected',
-    bindKey: {win: 'Ctrl-H', mac: 'Command-H'},
-    exec: function () {
+    bindKey: {
+        win: 'Ctrl-H',
+        mac: 'Command-H'
+    },
+    exec: function() {
         app.getShortcutProvider().getProvider().addHighlight();
     },
     readOnly: true
@@ -500,15 +613,21 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'line-numbers',
-    bindKey: {win: 'Ctrl-L', mac: 'Command-L'},
+    bindKey: {
+        win: 'Ctrl-L',
+        mac: 'Command-L'
+    },
     exec: showLineNumbers,
     readOnly: true
 });
 
 editor.commands.addCommand({
     name: 'codify-selected',
-    bindKey: {win: 'Ctrl-Shift-C', mac: 'Command-Shift-C'},
-    exec: function (editor) {
+    bindKey: {
+        win: 'Ctrl-Shift-C',
+        mac: 'Command-Shift-C'
+    },
+    exec: function(editor) {
         formatText(editor, matchCode, "`", "`");
     },
     readOnly: true
@@ -520,7 +639,7 @@ editor.commands.addCommand({
         win: 'Ctrl-i|Ctrl-İ|Ctrl-ı|Ctrl-I',
         mac: 'Command-i|Command-İ|Command-ı|Command-I'
     },
-    exec: function () {
+    exec: function() {
         app.getShortcutProvider().getProvider().addItalic();
     },
     readOnly: true
@@ -532,7 +651,7 @@ editor.commands.addCommand({
         win: 'F12',
         mac: 'F12'
     },
-    exec: function () {
+    exec: function() {
         if (!document.querySelectorAll("#firebug-script").length) {
             var head = document.querySelector("head");
             var js = document.createElement("script");
@@ -545,8 +664,11 @@ editor.commands.addCommand({
 
 editor.commands.addCommand({
     name: 'source-generate',
-    bindKey: {win: 'Tab', mac: 'Tab'},
-    exec: function (editor, selection) {
+    bindKey: {
+        win: 'Tab',
+        mac: 'Tab'
+    },
+    exec: function(editor, selection) {
 
         var cursorPosition = editor.getCursorPosition();
         var currentRow = cursorPosition.row;
@@ -591,7 +713,7 @@ editor.commands.addCommand({
         }
 
         // tree tab
-        if (textRange == "tree") { // uml block generator
+        if (textRange == "tree") { // tree block generator
             app.getShortcutProvider().getProvider().addTreeBlock();
             return;
         }
@@ -617,7 +739,7 @@ editor.commands.addCommand({
             }
         }
 
-//            "tbl3,2" tab
+        //            "tbl3,2" tab
         var tableMatch = textRange.match(/tbl(\d+)(\.|,)(\d+)/);
 
         if (Array.isArray(tableMatch))
@@ -651,8 +773,7 @@ function mouseWheelHandler(event) {
         if (event.wheelDelta < 0 && fontSize > 8) {
             //mouse scroll down - min size 8
             editor.setFontSize((fontSize - 1) + "px");
-        }
-        else if (event.wheelDelta >= 0 && fontSize < 24) {
+        } else if (event.wheelDelta >= 0 && fontSize < 24) {
             //mouse scroll up - max size 24
             editor.setFontSize((fontSize + 1) + "px");
         }
@@ -661,6 +782,10 @@ function mouseWheelHandler(event) {
 
 function matchBoldText(text) {
     return text.match(/^(\*{1,2})(.*?)(\*{1,2})$/);
+}
+
+function matchReference(text) {
+    return text.match(/^(\<\<)(.*?)(\>\>)$/);
 }
 
 function matchItalicizedText(text) {
