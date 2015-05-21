@@ -1,17 +1,17 @@
 function addNewCommand(key, value) {
-        var name = key + value;
-        editor.commands.addCommand({
-            name: name,
-            bindKey: {
-                win: key,
-                mac: key
-            },
-            exec: function(editor) {
-                editor.insert(value);
-            },
-            readOnly: true
-        });
-    }
+    var name = key + value;
+    editor.commands.addCommand({
+        name: name,
+        bindKey: {
+            win: key,
+            mac: key
+        },
+        exec: function(editor) {
+            editor.insert(value);
+        },
+        readOnly: true
+    });
+}
 
 // default keys https://searchcode.com/codesearch/view/58959997/
 editor.commands.addCommand({
@@ -208,35 +208,42 @@ var formatText = function(editor, matcher, firstCharacter, lastCharacter) {
 
 // navigateWordLeft() выбрать слово
 // navigateWordRight()
-function ReplaceInsertWrap(insertee, wrap) {
-    var lines = insertee.match(/\n/ig).length;
+editor.$blockScrolling = Infinity;
+
+function ReplaceInsertWrap(conf) {
+    var insertee = conf.insertee;
+    var text = editor.session.getTextRange(editor.getSelectionRange());
+    try{
+        var lines = conf.cursor || insertee.match(/\n/ig).length;
+    } catch(err){
+        // no \n
+        lines = 0;
+    }
+    var wrap = conf.wrap || text.length > 0;
+    var defaultSelection = conf.defSelection;
+    var insertAfter = conf.below ? 1 : 0;
     var range = editor.getSelectionRange();
     if (!wrap) {
         editor.removeToLineStart();
     } else {
-        editor.gotoLine(range.end.row, 0, true);
+        if (text.length > 0)
+            editor.remove(editor.getSelectionRange());
+        editor.gotoLine(range.start.row, 0, true);
     }
-    editor.insert(wrap);
+    editor.insert(insertee.replace(/\$SELECTION/ig, text || defaultSelection || "chant Hare Krishna"));
     if (!wrap) {
-        editor.gotoLine(range.end.row + 3, 0, true);
+        editor.gotoLine((lines >= 0 ? range.start.row : range.end.row) + lines, 0, true);
     } else {
-        editor.gotoLine(range.end.row + 4, 0, true);
+        editor.gotoLine((lines >= 0 ? range.start.row : range.end.row) + lines + 1, 0, true);
     }
 }
 
-function addFxChart(chartType, wrap) {
-    var range = editor.getSelectionRange();
-    if (!wrap) {
-        editor.removeToLineStart();
-    } else {
-        editor.gotoLine(range.end.row, 0, true);
-    }
-    editor.insert("[chart," + chartType + ",file=\"\"]\n--\n\n--\n");
-    if (!wrap) {
-        editor.gotoLine(range.end.row + 3, 0, true);
-    } else {
-        editor.gotoLine(range.end.row + 4, 0, true);
-    }
+function addFxChart(chartType) {
+    ReplaceInsertWrap({
+        insertee: "[chart," + chartType + ",file=\"\"]\n--\n$SELECTION\n--\n",
+        wrap: true,
+        cursor: 3
+    });
 }
 
 var editorMenu = {
@@ -282,55 +289,72 @@ var editorMenu = {
             editor.gotoLine(range.end.row + 4, 0, true);
         },
         addQuote: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("[quote, Шрила Прабхупада]\n____\n Повторяй Харе Кришна и будь Счастлив!\n____\n");
-            editor.gotoLine(range.end.row + 5, 0, true);
+            ReplaceInsertWrap({
+                insertee: "[quote, [author], [book]]\n____\n$SELECTION\n____\n",
+                wrap: true
+            });
         },
         addFootnote: function() {
-            editor.insert(".footnote:[Повторяй Харе Кришна и Будь Счастлив!] ");
+            ReplaceInsertWrap({
+                insertee: ".footnote:[$SELECTION] ",
+                wrap: true,
+                defSelection:"Chant Hare Krisna"
+            });
         },
         addFootnoteRef: function() {
-            editor.insert(".footnoteref:[chantHareKrishna, Повторяй Харе Кришна и Будь Счастлив!] ");
+            ReplaceInsertWrap({
+                insertee: ".footnoteref:[[refName], $SELECTION] ",
+                wrap: true,
+                defSelection:"Chant Hare Krisna"
+            });
         },
         addMenuSelection: function() {
-            editor.insert(" menu:File[Exit] ");
+            ReplaceInsertWrap({
+                insertee: "menu:File[Exit] ",
+                wrap: true
+            });
         },
         addKeybShortcut: function() {
-            editor.insert(" kbd:[F12 + ... ] ");
+          ReplaceInsertWrap({
+                insertee: "kbd:[$SELECTION] ",
+                wrap: true,
+                defSelection: 'F12 + ... '
+            });  
         },
         addCheckList: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("\n - [*] checked\n - [x] checked\n - [ ] not checked\n");
-            editor.gotoLine(range.end.row + 2, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "\n - [*] checked\n - [x] checked\n - [ ] not checked\n"
+            });
         },
         addIncludeFile: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("\ninclude::filename.asc[]");
-            editor.gotoLine(range.end.row + 2, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "\ninclude::$SELECTION[]",
+                defSelection: 'filename.asc'
+            });
         },
         addExplicitId: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row, 0, true);
-            editor.insert("[[primitives-nulls]]\n");
-            editor.gotoLine(range.end.row + 1, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "\n[[$SELECTION]]",
+                defSelection: 'section-refname'
+            });
         },
         addPageBreak: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("<<<\n");
-            editor.gotoLine(range.end.row + 2, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "<<<\n",
+                below: true,
+            });
         },
         addHorizontalRule: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row, 0, true);
-            editor.insert("'''");
-            editor.gotoLine(range.end.row + 1, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "'''\n",
+                below: true,
+            });
         },
         addInlineAnchor: function() {
-            editor.insert(" anchor:anchorname[] ");
+            ReplaceInsertWrap({
+                insertee: "anchor:$SELECTION[] ",
+                defSelection: 'Holly name'
+            });
         },
         addInternalReference: function() {
             formatText(editor, matchReference, " <<", ">> ");
@@ -339,10 +363,11 @@ var editorMenu = {
             formatText(editor, matchReference, " <<", ", название>> ");
         },
         addImageSection: function() {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("image::images/image.png[]\n");
-            editor.gotoLine(range.end.row + 1, range.end.column, true);
+            ReplaceInsertWrap({
+                insertee: "image::$SELECTION[]\n",
+                below: true,
+                defSelection: 'images/image.png'
+            });
         },
         addHeading: function() {
             var cursorPosition = editor.getCursorPosition();
@@ -365,35 +390,34 @@ var editorMenu = {
             session.insert(cursorPosition, "* ");
         },
         addAdmonition: function(type) {
-            var range = editor.getSelectionRange();
-            editor.gotoLine(range.end.row + 1, 0, true);
-            editor.insert("[" + type + "]\n====\n\n====");
-            editor.gotoLine(range.end.row + 3, 0, true);
+            ReplaceInsertWrap({
+                insertee: "[" + type + "]\n====\n$SELECTION\n====",
+                defSelection: 'Chant Hare Krisna!'
+            });
         },
         addSidebarBlock: function() {
-            var range = editor.getSelectionRange();
-            editor.removeToLineStart();
-            editor.insert(".Title\n****\n\n****\n");
-            editor.gotoLine(range.end.row + 3, 0, true);
+            ReplaceInsertWrap({
+                insertee: ".Title\n****\n$SELECTION\n****\n",
+                defSelection: 'Chant Hare Krisna!'
+            });
         },
         addExampleBlock: function() {
-            var range = editor.getSelectionRange();
-            editor.removeToLineStart();
-            editor.insert(".Title\n====\n\n====");
-            editor.gotoLine(range.end.row + 3, 0, true);
+            ReplaceInsertWrap({
+                insertee: ".Title\n====\n$SELECTION\n====",
+                defSelection: 'Chant Hare Krisna!'
+            });
         },
         addPassthroughBlock: function() {
-            var range = editor.getSelectionRange();
-            editor.removeToLineStart();
-            editor.insert("++++\n\n++++");
-            editor.gotoLine(range.end.row + 2, 0, true);
+            ReplaceInsertWrap({
+                insertee: "++++\n$SELECTION\n++++\n",
+                defSelection: 'Chant Hare Krisna!'
+            });
         },
         addIndexSelection: function() {
-            var range = editor.getSelectionRange();
-            var selectedText = editor.session.getTextRange(range);
-            if (selectedText)
-                if (selectedText.trim() != "")
-                    editor.insert("(((" + selectedText + ")))" + selectedText);
+            ReplaceInsertWrap({
+                insertee: "((($SELECTION)))$SELECTION",
+                wrap: true
+            });
         },
         addBookHeader: function() {
             editor.removeToLineStart();
